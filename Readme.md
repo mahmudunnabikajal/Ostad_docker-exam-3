@@ -10,7 +10,7 @@
 ---
 **Question 2:** The application’s uploaded files requires persistent storage. How would you utilize Persistent Volume Claims (PVCs) to provide this? Explain how Kubernetes handles the lifecycle of these volumes and ensures that the data remains consistent and available, even if a container or node fails.
 
-**Ans:**
+**Ans:** For handling persistent storage to uploaded files will use PersistentVolumeClaim to bind Persistent Volumes. This PVC will make sure to be available across pod restarts or node failures. Kubernetes will manage the lifecycle of the PVCs to ensure high-availability storage even if nodes/pods fail.
 
 
 ---
