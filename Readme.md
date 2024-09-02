@@ -16,4 +16,4 @@
 ---
 **Question 3:** The team decides to use a specific container runtime for this deployment. What considerations would you take into account when choosing a container runtime? How does Kubernetes interact with the runtime to manage the lifecycle of your containers?
 
-**Ans:**
+**Ans:** For container runtime, we have to check the compatibility with Kubernetes. Most common is Containerd for its simplicity. Other runtimes like Docker Engine. Kubernetes interacts with the runtime through the kubelet, which uses CRI to manage container lifecycles, such as starting and stopping containers, monitoring their health, and pulling container images, etc.
